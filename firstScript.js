@@ -51,10 +51,16 @@ const fs = require('fs');
 //************************************ */
 
 //Creates an empty object in Node, from external js: 
-
+/*
 const { PI, square } = require('./math');
 console.log(PI)
 console.log(square(9))
+*/
+
+//Required an entire directory:
+
+const family = require('./house')
+console.log("REQUIRED ENTIRE DIRECTORY", family);
 
 
 
