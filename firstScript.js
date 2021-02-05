@@ -6,12 +6,16 @@ for (let i = 0; i < 10; i++) {
 } 
 */
 
+//************************************* */
+
 /*
 process.argv in the command line:
 
 console.log("HELLO FROM ARGS!")
 console.log(process.argv)
 */
+
+//************************************ */
 
 /* 
 running a scipt using argv from the command line:
@@ -22,7 +26,9 @@ for(let arg of args) {
 }
 */
 
-//Make a folder with empty files stored in it:
+//************************************ */
+
+/*Make a folder with empty files stored in it:
 
 //Index of 2 means 3rd argument when running node (node, javascript file, argv or default of 'Project')
 const folderName = process.argv[2] || 'Project'
@@ -30,7 +36,8 @@ const folderName = process.argv[2] || 'Project'
 const fs = require('fs');
 
 //Empty string with double quotes required after string literal
-try {
+
+/try {
     fs.mkdirSync(folderName);
     fs.writeFileSync(`${folderName}/index.html`, "");
     fs.writeFileSync(`${folderName}/app.js`, "");
@@ -39,4 +46,15 @@ try {
     console.log("Something went wrong :(");
     console.log(e);
 }
+*/
+
+//************************************ */
+
+//Creates an empty object in Node, from external js: 
+
+const { PI, square } = require('./math');
+console.log(PI)
+console.log(square(9))
+
+
 
